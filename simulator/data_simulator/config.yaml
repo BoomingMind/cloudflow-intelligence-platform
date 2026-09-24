@@ -1,0 +1,35 @@
+seed: 52026
+start_date: '2026-09-01'
+days: 30
+customers: 40
+tickets: 90
+base_payments_per_subscription: 2
+kaggle_csv: null
+generated_dir: generated_data_v2
+source_dir: ingestion_data
+initial:
+  arrival_time: '2026-10-03T00:00:00+00:00'
+batch:
+  size: 25
+  count: 12
+  arrival_start: '2026-10-04T09:00:00+00:00'
+  arrival_step_hours: 24
+bad_data:
+  duplicate_rate: 0.02
+  null_required_rate: 0.01
+  invalid_value_rate: 0.01
+  invalid_fk_rate: 0.01
+  invalid_timestamp_rate: 0.01
+  negative_payment_rate: 0.02
+stream:
+  topic: application-events
+  event_rate: 20
+  micro_batch_size: 10
+  late_rate: 0.08
+  out_of_order_rate: 0.08
+  duplicate_rate: 0.04
+  incident_burst_multiplier: 4
+knowledge:
+  model: gpt-6-luna
+  skip: true
+  retries: 3

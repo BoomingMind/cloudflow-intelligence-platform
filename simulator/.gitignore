@@ -1,0 +1,10 @@
+.env
+certs/
+.venv/
+__pycache__/
+.pytest_cache/
+generated_data_v2/
+ingestion_data/
+replay_data/
+stream_state.json
+*.pyc

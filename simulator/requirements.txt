@@ -1,0 +1,9 @@
+Faker>=39,<41
+PyYAML>=6,<7
+python-dotenv>=1,<2
+pyarrow>=18,<26
+pydantic>=2,<3
+openai>=2,<4
+kafka-python>=2.0,<4
+databricks-sdk>=0.72,<1
+pytest>=8,<10
