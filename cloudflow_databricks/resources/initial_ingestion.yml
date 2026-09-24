@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    initial_ingestion:
+      name: cloudflow-initial-ingestion
+
+      tasks:
+        - task_key: initial_ingestion_task
+
+          spark_python_task:
+            python_file: ../src/ingestion/initial_ingestion.py

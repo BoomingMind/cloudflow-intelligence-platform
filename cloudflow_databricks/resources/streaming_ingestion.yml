@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    streaming_ingestion:
+      name: cloudflow-streaming-ingestion
+
+      tasks:
+        - task_key: kafka_streaming_ingestion
+
+          spark_python_task:
+            python_file: ../src/ingestion/streaming_ingestion.py

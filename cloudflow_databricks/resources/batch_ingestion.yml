@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    batch_ingestion:
+      name: cloudflow-batch-ingestion
+
+      tasks:
+        - task_key: batch_ingestion_task
+
+          spark_python_task:
+            python_file: ../src/ingestion/batch_ingestion.py

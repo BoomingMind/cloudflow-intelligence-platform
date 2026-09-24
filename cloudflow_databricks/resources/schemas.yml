@@ -1,0 +1,31 @@
+resources:
+  schemas:
+    landing:
+      name: landing
+      catalog_name: cloudflow
+      comment: "CloudFlow landing schema"
+
+    bronze:
+      name: bronze
+      catalog_name: cloudflow
+      comment: "CloudFlow Bronze layer"
+
+    silver:
+      name: silver
+      catalog_name: cloudflow
+      comment: "CloudFlow Silver layer"
+
+    gold:
+      name: gold
+      catalog_name: cloudflow
+      comment: "CloudFlow Gold layer"
+
+    quarantine:
+      name: quarantine
+      catalog_name: cloudflow
+      comment: "CloudFlow invalid and quarantined data"
+
+    ops:
+      name: ops
+      catalog_name: cloudflow
+      comment: "CloudFlow operational metadata"

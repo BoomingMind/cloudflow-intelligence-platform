@@ -1,0 +1,12 @@
+resources:
+  volumes:
+    source_data:
+      name: source_data
+      catalog_name: cloudflow
+      schema_name: landing
+      comment: "CloudFlow initial and batch ingestion landing files"
+      
+    certificates:
+      name: certificates
+      catalog_name: cloudflow
+      schema_name: ops
